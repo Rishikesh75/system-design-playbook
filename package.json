@@ -1,0 +1,15 @@
+{
+  "name": "system-design-playbook",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "export:diagrams": "node scripts/export-diagrams.mjs",
+    "setup:hooks": "git config core.hooksPath .githooks",
+    "setup:browser": "playwright install chromium"
+  },
+  "dependencies": {
+    "@excalidraw/excalidraw": "^0.18.1",
+    "playwright": "^1.55.0",
+    "vite": "^7.1.3"
+  }
+}
